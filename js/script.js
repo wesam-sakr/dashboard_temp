@@ -199,7 +199,7 @@ $(document).ready(function () {
   });
 
   // apply job upload cv
-  $('#file-input').change(function(){
+  $('.file-input').change(function(){
     const fileInput = $(this).find('[type="file"]')[0];
     const label = $(this).find('[data-js-label]')[0];
     console.log($(fileInput).val());
@@ -278,8 +278,9 @@ $(".show-pass").click(function () {
       })
     })
 
-  if ($(".profile").length > 0) {
+
     const imgDiv = document.querySelector('.profile-pic');
+    const alt = document.querySelector('.alt');
     const img = document.querySelector('#photo');
     const file = document.querySelector('#file');
     const uploadBtn = document.querySelector('#uploadBtn');
@@ -298,11 +299,13 @@ $(".show-pass").click(function () {
         const reader = new FileReader();
         reader.addEventListener('load', function(){
             img.setAttribute('src', reader.result);
+            img.style.display="block";
+            alt.style.display="none"
         });
         reader.readAsDataURL(choosedFile);
     }
     });
-}
+
 
   // niceSelect
   // $('select').niceSelect();
