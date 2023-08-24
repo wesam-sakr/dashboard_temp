@@ -847,3 +847,11 @@ main .nav-dash li .nav-link.active {
 .profile .input-group .input-group-text::after{
   border-right: 8px solid #fff;
 }
+.add-serv{
+  color: #000 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+}
