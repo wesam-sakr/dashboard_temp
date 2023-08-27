@@ -459,9 +459,10 @@ h1.logo {
   box-shadow: 0px 2px 6px #0000000A;
 }
 
-.navbar .container {
+.navbar .container ,
+.navbar .container-fluid{
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 .navbar .option {
@@ -473,6 +474,7 @@ h1.logo {
 
 .navbar-brand {
   min-width: 150px;
+  margin: auto;
 }
 
 .navbar .search {
@@ -854,4 +856,61 @@ main .nav-dash li .nav-link.active {
   justify-content: center;
   gap: 8px;
   background: transparent;
+}
+.toggle-nav-btn{
+  display: none;
+}
+
+
+@media (max-width: 991.8px){
+  .status-nav .nav{
+    row-gap: 20px;
+  }
+  .serv-data {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  main .nav-dash {
+    background-color: #fff;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: .3s;
+  }
+  .toggle-nav-btn{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-radius: 5px 0 0 5px;
+    color: #000;
+    font-size: 24px;
+    /* transform: translateX(-100%); */
+    /* box-shadow: 0px 2px 6px #0000000A; */
+  }
+  main .nav-dash.nav-toggle:not(:last-child){
+    transform: translateX(0);
+  }
+  .navbar .container, .navbar .container-fluid {
+    display: flex;
+    justify-content: flex-start;
+    /* grid-template-columns: auto auto auto; */
+  }
+  .navbar .container-fluid .navbar-brand{
+    margin: 0 0!important;
+  }
+  .navbar .container-fluid .option{
+    flex-grow: 0;
+    margin-right: auto;
+  }
+  .navbar .search {
+    display: none;
+  }
+  main {
+    display: block;
+  }
 }

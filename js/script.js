@@ -14,6 +14,12 @@ $('.navbar-toggler').click(function(){
   $('body').toggleClass('nav-open')
 })
 
+console.log($('.toggle-nav-btn').before());
+$('.toggle-nav-btn').click(function(){
+  $('.toggle-nav-btn i').toggleClass('fa-bars fa-xmark');
+  $('.nav-dash').toggleClass('nav-toggle');
+})
+
 
 // dir
 var bodyDir = $('body').css('direction')
