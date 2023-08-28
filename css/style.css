@@ -688,22 +688,36 @@ main .nav-dash li .nav-link.active {
   color: #E90000 !important;
 }
 
+#referredServModal input.referred-org + label{
+  cursor: pointer;
+}
+#referredServModal input.referred-org:checked + label{
+  background: var(--main-color);
+  color: #fff;
+  display: flex;
+}
+
+
+.modal{
+  --bs-modal-width: 50%
+}
+#ServModal,
 #referredServModal {
   --bs-modal-width: 70% !important;
 }
 
-#referredServModal .modal-content {
+#ServModal .modal-content {
   padding: 0;
   overflow: visible;
 }
 
-#referredServModal .modal-content .modal-header {
+#ServModal .modal-content .modal-header {
   background: #A2A2A2;
   color: #fff;
   display: flex;
 }
 
-#referredServModal .modal-content .modal-header .btn-close {
+#ServModal .modal-content .modal-header .btn-close {
   position: absolute;
   top: -5px;
   left: -5px;
@@ -712,7 +726,7 @@ main .nav-dash li .nav-link.active {
   opacity: 1;
 }
 
-#referredServModal .modal-body {
+#ServModal .modal-body {
   border-radius: 0 0 .5rem .5rem;
 }
 

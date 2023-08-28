@@ -39,6 +39,9 @@
 
   <nav class="navbar">
     <div class="container-fluid">
+      <button class="toggle-nav-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
       <div class="navbar-brand">
         <!-- <img src="images/" alt=""> -->
         <h1 class="">Logo</h1>
@@ -171,7 +174,7 @@
                     <span>تاريخ الطلب</span><span>18/5/2023</span>
                   </div>
                 </div>
-                <h6>اسم الجمعية المحال منها</h6>
+                <h6 class="serv-name">اسم الجمعية المحال منها</h6>
               </div>
               <div>
                 <h6>اسم المستخدم</h6>
@@ -232,151 +235,89 @@
   <div class="modal fade" id="referredServModal" tabindex="-1" aria-labelledby="referredServModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
       <div class="modal-content"> 
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">
-            اسم الجمعية
-            <span>(المدينة)</span>
+        <div class="modal-body py-4">
+          <h1 class="modal-title fs-5 mb-4" id="staticBackdropLabel">
+            إحالة لجمعية تقدم الخدمة 
           </h1>
-          <p><span>25 </span>خدمة مقدمة</p>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-5">
-          <div class="row gy-3">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <!-- <a href="" class="link"></a> -->
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
+          <form action="">
+            <div class="row gy-3">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org1">
+                <label for="org1" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org2">
+                <label for="org2" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org3">
+                <label for="org3" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org4">
+                <label for="org4" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org5">
+                <label for="org5" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org6">
+                <label for="org6" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org7">
+                <label for="org7" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org8">
+                <label for="org8" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org9">
+                <label for="org9" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org10">
+                <label for="org10" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org11">
+                <label for="org11" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <input type="radio" class="d-none referred-org" name="chosenOrg" id="org12">
+                <label for="org12" class="org-serv">
+                  <h6 class="serv-name">اسم الجمعية</h6>
+                </label>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <!-- <a href="" class="link"></a> -->
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="org-serv">
-                <button class="link"></button>
-                <div class="serv-img">
-                  <i class="bi bi-image-alt"></i>
-                </div>
-                <div class="serv-name">
-                  <h6>اسم الخدمه</h6>
-                </div>
-              </div>
-            </div>
-          </div>
+            <button class="main-btn dark m-auto mt-4">
+              <span>اختيار الجمعية</span>
+            </button>
+          </form>
         </div> 
       </div>
     </div>
