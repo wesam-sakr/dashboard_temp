@@ -400,8 +400,7 @@ h1.logo {
   max-height: 100vh;
 }
 
-.profile-pic .bi ,
-.contactUs .alt.bi{
+.profile-pic .bi{
   color: var(--white);
   background: #AAB0BB;
   width: 150px;
@@ -531,9 +530,9 @@ main .nav-dash li .nav-link {
   gap: 10px;
 }
 
-main .nav-dash li .bi,
-main .nav-dash li svg,
-main .nav-dash li i {
+main .nav-dash li .nav-link .bi,
+main .nav-dash li .nav-link svg,
+main .nav-dash li .nav-link i {
   color: #C1C8D8;
   font-size: 18px;
 }
@@ -807,6 +806,14 @@ main .nav-dash li .nav-link.active {
   border-radius: 50%;
 }
 
+
+.contactUs img{
+  color: var(--white);
+  background: #AAB0BB;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
 .contactUs .list{
   display: flex;
   align-items: center;

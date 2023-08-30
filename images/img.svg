@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="303.012" height="186.688" viewBox="0 0 303.012 186.688">
+  <defs>
+    <filter id="close-up-professional-wheelchair" x="0" y="0" width="303.012" height="186.688" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#545454" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_68409" data-name="Group 68409" transform="translate(-1029.5 -664.5)">
+    <g id="Group_68271" data-name="Group 68271" transform="translate(1 4)">
+      <g transform="matrix(1, 0, 0, 1, 1028.5, 660.5)" filter="url(#close-up-professional-wheelchair)">
+        <rect id="close-up-professional-wheelchair-2" data-name="close-up-professional-wheelchair" width="258.012" height="141.688" transform="translate(22.5 22.5)" fill="#aab0bb"/>
+      </g>
+      <g id="Group_68146" data-name="Group 68146" transform="translate(1144.829 719.477)">
+        <circle id="Ellipse_257" data-name="Ellipse 257" cx="35" cy="35" r="35" transform="translate(0.171 -0.477)" fill="#505050"/>
+        <g id="Group_920" data-name="Group 920" transform="translate(19.242 19.242)">
+          <ellipse id="Ellipse_256" data-name="Ellipse 256" cx="16" cy="15.5" rx="16" ry="15.5" transform="translate(-0.07 0.282)" fill="#fff"/>
+          <path id="Path_27" data-name="Path 27" d="M4.452,1.653,8.12,5.932,13.176-.451l6.417,8.588H-.522Z" transform="translate(6.208 11.568)" fill="#aab0bb"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
