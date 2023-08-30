@@ -220,7 +220,7 @@
                             <span class="serv-op-btn approve">تمت الموافقة</span>
                         </div>
                     </div>
-                    <button class="main-btn dark w-50 mt-5 m-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button class="main-btn dark w-50 mt-5 m-auto" data-bs-toggle="modal" data-bs-target="#addPartialServModal">
                         <span>إضافة خدمة</span>
                     </button>
                 </div>
@@ -228,29 +228,94 @@
         </aside>
     </main>
 
-    <!-- exampleModal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">  
-        <div class="modal-body">
-            <div class="my-3">
-                <label for="servName" class="form-label">اسم الخدمة</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="" id="servName" aria-label="servName" aria-describedby="basic-servName" required>
-                </div>
+    <!-- addPartialServModal -->
+    <div class="modal fade" id="addPartialServModal" tabindex="-1" aria-labelledby="addPartialServModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">  
+                <div class="modal-body">
+                    <div class="my-3">
+                        <label for="servName" class="form-label">اسم الخدمة</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="" id="servName" aria-label="servName" aria-describedby="basic-servName" required>
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <label for="servDesc" class="form-label">تفاصيل الخدمة</label>
+                        <div class="input-group">
+                            <textarea class="form-control" id="servDesc" rows="1" >
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="servType" id="partial">
+                                    <label class="form-check-label" for="partial">
+                                     جزئية
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="servType" id="fullServ">
+                                    <label class="form-check-label" for="fullServ">
+                                     كلية
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a role="button" class="main-btn dark w-100 mt-4" data-bs-target="#addPartialServModal2" data-bs-toggle="modal">ارسال</a>
+                </div> 
             </div>
-            <div class="my-3">
-                <label for="servDesc" class="form-label">تفاصيل الخدمة</label>
-                <div class="input-group">
-                    <textarea class="form-control" id="servDesc" rows="1" >
-                    </textarea>
-                </div>
-            </div>
-          <a href="org-rejected-servs.html" class="main-btn dark w-100 mt-4">ارسال</a>
-        </div> 
-      </div>
+        </div>
     </div>
-  </div>
+
+    <!-- addPartialServModal2 -->
+    <div class="modal fade" id="addPartialServModal2" tabindex="-1" aria-labelledby="addPartialServModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">  
+                <div class="modal-body">
+                    <div class="my-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="servType" id="partial">
+                                    <label class="form-check-label" for="partial">
+                                     جزئية
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="servType" id="fullServ">
+                                    <label class="form-check-label" for="fullServ">
+                                     كلية
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- if value -->
+                    <div class="my-3">
+                        <label for="partVal" class="form-label">القيمة</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="" id="partVal" aria-label="partVal" aria-describedby="basic-partVal" checked required>
+                        </div>
+                    </div>
+                    <!-- if partial -->
+                    <div class="my-3">
+                        <label for="partVal" class="form-label">القيمة</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="" id="partVal" aria-label="partVal" aria-describedby="basic-partVal" required>
+                        </div>
+                    </div>
+                    <a role="button" class="main-btn dark w-100 mt-4" data-bs-target="#addPartialServModal3" data-bs-toggle="modal">ارسال</a>
+                </div> 
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap script-->
     <script src="js/bootstrap.bundle.min.js"></script>

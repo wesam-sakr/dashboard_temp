@@ -550,6 +550,9 @@ main .nav-dash li .nav-link.active {
 
 .data-dash .head {
   display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
@@ -581,7 +584,7 @@ main .nav-dash li .nav-link.active {
 }
 
 .status-nav {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .status-nav .nav-link {
@@ -591,6 +594,7 @@ main .nav-dash li .nav-link.active {
   padding: .45rem 2rem;
   font-weight: bold;
   margin: 0 1rem;
+  margin-bottom: .75rem;
 }
 
 .status-nav .nav-link.active {
@@ -875,11 +879,30 @@ main .nav-dash li .nav-link.active {
   display: none;
 }
 
+/*  */
+[id^="addPartialServModal"] .form-check{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+[id^="addPartialServModal"] .form-check-input {
+  width: 2.2em;
+  height: 2.2em;
+  border-color: var(--white) !important;
+}
+[id^="addPartialServModal"] .form-check .form-check-input:checked {
+  border-color: var(--white) !important;
+  background-color: var(--white);
+}
+[id^="addPartialServModal"] .form-check-input:checked[type=radio] {
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23000'/%3e%3c/svg%3e");
+}
+
 
 @media (max-width: 991.8px){
-  .status-nav .nav{
+  /* .status-nav .nav{
     row-gap: 20px;
-  }
+  } */
   .serv-data {
     flex-wrap: wrap;
     gap: 12px;
@@ -926,5 +949,32 @@ main .nav-dash li .nav-link.active {
   }
   main {
     display: block;
+  }
+}
+
+@media (max-width:786px){
+  .status-nav .nav{
+    justify-content: flex-start !important;
+  }
+  .status-nav .nav-link {
+    padding: 0.45rem 1rem;
+    font-size: 14px;
+    margin: 0 .35rem;
+    margin-bottom: .6rem;
+  }
+  .serv-info {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:578px){
+  .serv-info {
+    justify-content: flex-start;
+  }
+  .serv-op {
+    gap: 18px;
+  }
+  .sub-status-nav .nav-link, .d_sub-status-nav .nav-link {
+    margin: 0 0.5rem;
   }
 }
