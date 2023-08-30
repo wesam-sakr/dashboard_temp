@@ -733,7 +733,8 @@ main .nav-dash li .nav-link.active {
   border-radius: 0 0 .5rem .5rem;
 }
 
-.org-serv {
+.org-serv,
+.org-offer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -743,6 +744,9 @@ main .nav-dash li .nav-link.active {
   padding: 2rem 1rem;
   align-items: center;
   position: relative;
+}
+.org-offer img{
+  height: 120px;
 }
 
 .org-serv .serv-img {

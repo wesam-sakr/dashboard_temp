@@ -21,6 +21,7 @@ else{
 
 // toggle nav
 $('.toggle-nav-btn').click(function(){
+  console.log('89989');
   $('.toggle-nav-btn i').toggleClass('fa-bars fa-xmark');
   $('.nav-dash').toggleClass('nav-toggle');
 })

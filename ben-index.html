@@ -166,7 +166,7 @@
               <div class="row gy-3">
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="org-serv">
-                    <button class="link"></button>
+                    <button class="link" data-bs-toggle="modal" data-bs-target="#showServModal"></button>
                     <div class="serv-img">
                       <img src="images/alt-light.svg" alt="">
                     </div>
@@ -177,7 +177,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="org-serv">
-                    <button class="link"></button>
+                    <button class="link" data-bs-toggle="modal" data-bs-target="#showServModal"></button>
                     <div class="serv-img">
                       <img src="images/alt-light.svg" alt="">
                     </div>
@@ -188,7 +188,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="org-serv">
-                    <button class="link"></button>
+                    <button class="link" data-bs-toggle="modal" data-bs-target="#showServModal"></button>
                     <div class="serv-img">
                       <img src="images/alt-light.svg" alt="">
                     </div>
@@ -199,7 +199,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="org-serv">
-                    <button class="link"></button>
+                    <button class="link" data-bs-toggle="modal" data-bs-target="#showServModal"></button>
                     <div class="serv-img">
                       <img src="images/alt-light.svg" alt="">
                     </div>
@@ -210,7 +210,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="org-serv">
-                    <button class="link"></button>
+                    <button class="link" data-bs-toggle="modal" data-bs-target="#showServModal"></button>
                     <div class="serv-img">
                       <img src="images/alt-light.svg" alt="">
                     </div>
@@ -221,7 +221,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="org-serv">
-                    <button class="link"></button>
+                    <button class="link" data-bs-toggle="modal" data-bs-target="#showServModal"></button>
                     <div class="serv-img">
                       <img src="images/alt-light.svg" alt="">
                     </div>
@@ -232,7 +232,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="org-serv">
-                    <button class="link"></button>
+                    <button class="link" data-bs-toggle="modal" data-bs-target="#showServModal"></button>
                     <div class="serv-img">
                       <img src="images/alt-light.svg" alt="">
                     </div>
@@ -243,7 +243,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="org-serv">
-                    <button class="link"></button>
+                    <button class="link" data-bs-toggle="modal" data-bs-target="#showServModal"></button>
                     <div class="serv-img">
                       <img src="images/alt-light.svg" alt="">
                     </div>
@@ -255,15 +255,16 @@
               </div>
             </div>
             <div class="org-offers">
+              <h5 class="my-4">العروض</h5>
               <div class="row gy-3">
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="org-offer">
-                    <button class="link"></button>
+                    <button class="link" data-bs-toggle="modal" data-bs-target="#showOfferModal"></button>
                     <div class="offer-img">
                       <img src="images/img.svg" alt="">
                     </div>
                     <div class="serv-name">
-                      <h6>اسم العرض</h6>
+                      <h6>العرض يكتب هنا</h6>
                     </div>
                   </div>
                 </div>
@@ -273,6 +274,23 @@
         </div>
       </aside>
     </main>
+
+    <!-- showServModal -->
+    <div class="modal fade" id="showServModal" tabindex="-1" aria-labelledby="showServModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">  
+              <div class="modal-body">
+                <h5>اسم الخدمة</h5>
+                <img src="images/img.svg" alt="">
+                <div class="row">
+                  <button class="main-btn dark w-100 mt-4" >الحصول على الخدمة</button>
+                  
+                  
+                </div>
+              </div> 
+          </div>
+      </div>
+    </div>
 
     <!-- Bootstrap script-->
     <script src="js/bootstrap.bundle.min.js"></script>
