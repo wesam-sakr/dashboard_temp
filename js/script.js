@@ -117,33 +117,37 @@ $(document).ready(function () {
   })
 })
 
-// change profile pic
-const imgDiv = document.querySelector('.profile-pic');
-const alt = document.querySelector('.alt');
-const img = document.querySelector('#photo');
-const file = document.querySelector('#file');
-const uploadBtn = document.querySelector('#uploadBtn');
-//if user hover on img div
-imgDiv.addEventListener('mouseenter', function(){
-    uploadBtn.style.display = "block";
-});
-//if we hover out from img div
-imgDiv.addEventListener('mouseleave', function(){
-    uploadBtn.style.display = "none";
-});
-//when we choose a pic to upload
-file.addEventListener('change', function(){
-const choosedFile = this.files[0];
-if (choosedFile) {
-    const reader = new FileReader();
-    reader.addEventListener('load', function(){
-        img.setAttribute('src', reader.result);
-        img.style.display="block";
-        alt.style.display="none"
-    });
-    reader.readAsDataURL(choosedFile);
+if ($('.profile-pic').length> 0){
+
+  // change profile pic
+  const imgDiv = document.querySelector('.profile-pic');
+  const alt = document.querySelector('.alt');
+  const img = document.querySelector('#photo');
+  const file = document.querySelector('#file');
+  const uploadBtn = document.querySelector('#uploadBtn');
+  //if user hover on img div
+  imgDiv.addEventListener('mouseenter', function(){
+      uploadBtn.style.display = "block";
+  });
+  //if we hover out from img div
+  imgDiv.addEventListener('mouseleave', function(){
+      uploadBtn.style.display = "none";
+  });
+  //when we choose a pic to upload
+  file.addEventListener('change', function(){
+  const choosedFile = this.files[0];
+  if (choosedFile) {
+      const reader = new FileReader();
+      reader.addEventListener('load', function(){
+          img.setAttribute('src', reader.result);
+          img.style.display="block";
+          alt.style.display="none"
+      });
+      reader.readAsDataURL(choosedFile);
+  }
+  });
 }
-});
+
 
 
 // niceSelect
