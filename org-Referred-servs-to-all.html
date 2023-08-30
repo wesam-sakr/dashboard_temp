@@ -250,7 +250,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="servType" id="partial">
+                                    <input class="form-check-input" type="radio" value="partial" name="servType" id="partial">
                                     <label class="form-check-label" for="partial">
                                      جزئية
                                     </label>
@@ -258,7 +258,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="servType" id="fullServ">
+                                    <input class="form-check-input" type="radio" value="fullServ" name="servType" id="fullServ">
                                     <label class="form-check-label" for="fullServ">
                                      كلية
                                     </label>
@@ -266,52 +266,49 @@
                             </div>
                         </div>
                     </div>
-                    <a role="button" class="main-btn dark w-100 mt-4" data-bs-target="#addPartialServModal2" data-bs-toggle="modal">ارسال</a>
-                </div> 
-            </div>
-        </div>
-    </div>
 
-    <!-- addPartialServModal2 -->
-    <div class="modal fade" id="addPartialServModal2" tabindex="-1" aria-labelledby="addPartialServModalLabel2" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">  
-                <div class="modal-body">
-                    <div class="my-3">
+                    <!-- if partial -->
+                    <div class="partial my-3">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="servType" id="partial">
-                                    <label class="form-check-label" for="partial">
-                                     جزئية
+                                    <input class="form-check-input" type="radio" value="byValue" name="servTypeVal" id="byValue">
+                                    <label class="form-check-label" for="byValue">
+                                        بالقيمة
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="servType" id="fullServ">
-                                    <label class="form-check-label" for="fullServ">
-                                     كلية
+                                    <input class="form-check-input" type="radio" value="inParts" name="servTypeVal" id="inParts">
+                                    <label class="form-check-label" for="inParts">
+                                        بالآجزاء
                                     </label>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- if value -->
-                    <div class="my-3">
-                        <label for="partVal" class="form-label">القيمة</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="" id="partVal" aria-label="partVal" aria-describedby="basic-partVal" checked required>
+                        <!-- if value -->
+                        <div class="servTypeVal byValue">
+                            <div class="my-3">
+                                <label for="partVal" class="form-label">القيمة</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="" id="partVal" aria-label="partVal" aria-describedby="basic-partVal" checked required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- if partial -->
+                        <div class="servTypeVal inParts">
+                            <div class="my-3">
+                                <label for="partVal" class="form-label">أجزاء الخدمة</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="" id="partVal" aria-label="partVal" aria-describedby="basic-partVal" required>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- if partial -->
-                    <div class="my-3">
-                        <label for="partVal" class="form-label">القيمة</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="" id="partVal" aria-label="partVal" aria-describedby="basic-partVal" required>
-                        </div>
-                    </div>
-                    <a role="button" class="main-btn dark w-100 mt-4" data-bs-target="#addPartialServModal3" data-bs-toggle="modal">ارسال</a>
+
+                    <!-- data-bs-target="#addPartialServModal2" data-bs-toggle="modal" -->
+                    <a role="button" class="main-btn dark w-100 mt-4" >ارسال</a>
                 </div> 
             </div>
         </div>

@@ -899,6 +899,12 @@ main .nav-dash li .nav-link.active {
 }
 
 
+.partial,
+.byValue,
+.inParts{
+  display: none;
+}
+
 @media (max-width: 991.8px){
   /* .status-nav .nav{
     row-gap: 20px;
@@ -907,7 +913,7 @@ main .nav-dash li .nav-link.active {
     flex-wrap: wrap;
     gap: 12px;
   }
-  main .nav-dash {
+  main aside.nav-dash {
     background-color: #fff;
     position: fixed;
     top: 60px;
@@ -975,6 +981,18 @@ main .nav-dash li .nav-link.active {
     gap: 18px;
   }
   .sub-status-nav .nav-link, .d_sub-status-nav .nav-link {
-    margin: 0 0.5rem;
+    margin: 0 0.35rem;
   }
+  .d_sub-status-nav {
+    font-size: 14px;
+    margin: 1.5rem 0;
+  }
+  .d_sub-status-nav .nav{
+    justify-content: start !important;
+  }
+  .contactUs .list {
+    gap: 8px;
+    padding: 1rem 0.5rem;
+  }
+
 }
