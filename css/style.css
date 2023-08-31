@@ -879,18 +879,18 @@ main .nav-dash li .nav-link.active {
   transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
 }
 
-.profile .input-group {
+.light.input-group {
   border: 2px solid #fff;
 }
-.profile .input-group .form-control{
+.light.input-group .form-control{
   background-color: transparent !important;
   padding: .5rem;
 }
-.profile .input-group .input-group-text {
+.light.input-group .input-group-text {
   background: #fff;
   position: relative;
 }
-.profile .input-group .input-group-text::after{
+.light.input-group .input-group-text::after{
   border-right: 8px solid #fff;
 }
 .add-serv{
