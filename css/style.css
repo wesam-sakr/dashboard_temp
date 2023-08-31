@@ -277,8 +277,23 @@ h1.logo {
   width: 220px;
   padding: .5rem;
 }
+.circle-btn{
+  font-size: 16px;
+  background: var(--second-color) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  border-radius: 50%;
+  overflow: hidden;
+  /* width: 220px; */
+  width: 40px;
+  height: 40px;
+  /* padding: .5rem; */
+}
 
-.main-btn.dark {
+.main-btn.dark,
+.circle-btn.dark {
   background-color: #000 !important;
   color: #fff;
 }
@@ -399,7 +414,10 @@ h1.logo {
 .askForReg a {
   color: #2A2A2A !important;
 }
-
+.E-card{
+  width: 300px;
+  object-fit: cover;
+}
 .profile-pic {
   margin-bottom: 36px;
   border-radius: .5rem;
@@ -841,6 +859,7 @@ main .nav-dash li .nav-link.active {
   padding: 1rem 1.5rem;
   border-radius: 10px;
   margin-bottom: 1rem;
+  position: relative;
 
 }
 .contactUs .shape{
