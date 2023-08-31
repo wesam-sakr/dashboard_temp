@@ -242,6 +242,21 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+table.dataTable {
+  border: 2px solid #f0f0f0;
+  clear: both;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+  max-width: none !important;
+  border-collapse: separate !important;
+  border-spacing: 0;
+}
+table.dataTable th, table.dataTable td {
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 0;
+  padding: 1rem;
+  vertical-align: middle;
+}
 
 h1.logo {
   /* text-align: center; */
@@ -253,7 +268,7 @@ h1.logo {
 
 .main-btn {
   font-size: 16px;
-  background: var(--second-color);
+  background: var(--second-color) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,7 +279,7 @@ h1.logo {
 }
 
 .main-btn.dark {
-  background-color: #000;
+  background-color: #000 !important;
   color: #fff;
 }
 
