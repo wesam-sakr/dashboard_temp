@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <!-- <link rel="shortcut icon" type="image/svg" href="images/"/> -->
+    <!-- bootstrapp-rtl -->
+    <link rel="stylesheet" href="../../css/bootstrap.rtl.min.css">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="../../css/font_bootstrap-icons.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fancyBox link  -->
+    <link rel="stylesheet" href="../../css/jquery.fancybox.min.css"/>
+    <!-- reteYo -->
+    <link rel="stylesheet" href="../../css/jquery.rateyo.min.css">
+    <!-- nice select link -->
+    <link rel="stylesheet" href="../../css/nice-select.css">
+    <!-- owl carousel link -->
+    <link rel="stylesheet" href="../../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../../css/owl.theme.default.min.css"/>
+    <!-- animate link -->
+    <link rel="stylesheet" href="../../css/animate.css">
+
+    <link rel="stylesheet" href="../../css/style.css" />
+
+    <!-- AR Style -->
+    <!-- <link rel="stylesheet" href="css/style-en.css" /> -->
+    <!-- bootstrap-ltr -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+      <div class="container-fluid">
+        <button class="toggle-nav-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="navbar-brand">
+          <!-- <img src="images/" alt=""> -->
+          <h1 class="">Logo</h1>
+        </div>
+          <div class="option">
+            <div class="search">
+              <i class="bi bi-search"></i>
+              <i class="bi bi-sliders"></i>
+              <input class="form-control" type="search" name="" id="" placeholder="ابحث عن خدمة مطلوبة">
+            </div>
+            <div class="setting">
+              <div class="lang">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+              <div class="notif">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <aside class="nav-dash">
+        <ul>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="bi bi-bar-chart-fill"></i>
+              <span>الإحصائيات</span>
+            </a>
+          </li>
+          <li  class="nav-item">
+            <a href="offers.html" class="nav-link active">
+              <i class="bi bi-person-fill"></i>
+              <span>العروض</span>
+            </a>
+          </li>
+          <li  class="nav-item">
+            <a href="beneficiaries.html" class="nav-link">
+              <i class="bi bi-bar-chart-fill"></i>
+              <span>المستفيدين</span>
+            </a>
+          </li> 
+          <li  class="nav-item">
+            <a href="profile.html" class="nav-link">
+              <i class="bi bi-person-fill"></i>
+              <span>الملف الشخصي</span>
+            </a>
+          </li>
+          <li  class="nav-item">
+            <a href="terms.html" class="nav-link">
+              <i class="bi bi-list-stars"></i>
+              <span>الشروط والأحكام</span>
+            </a>
+          </li>
+          <li  class="nav-item">
+            <a href="policy.html" class="nav-link">
+              <i class="bi bi-shield-lock"></i>
+              <span>سياسية الخصوصية</span>
+            </a>
+          </li>
+          <li  class="nav-item">
+            <a href="contactUs.html" class="nav-link">
+              <i class="bi bi-fonts"></i>
+              <span>تواصل معنا</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <aside class="data-dash">
+        <div class="container">
+          <div class="head">
+            <h5>الخدمات المطلوبة</h5>
+          </div>
+          <div class="nav-content">
+            <div class="org-offers">
+              <div class="profile-data">
+                <div class="status-nav">
+                  <ul class="nav justify-content-between">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="offers.html">الانتظار</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="waited-offers.html">قيد التنفيذ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="rejected-offers.html">مرفوضة</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="finished-offers.html">منتهية</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav-content">
+                  <div class="serv-order">
+                    <div class="serv-data">
+                      <div class="serv-info">
+                        <div class="serv-img">
+                          <img src="../../images/alt-dark.svg" alt="">
+                        </div>
+                        <div class="serv-name">
+                          <h6>اسم العرض</h6>
+                          <div class="serv-date">
+                            <span>تاريخ الطلب</span><span>18/5/2023</span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6>اسم المستخدم</h6>
+                    </div>
+                    <div class="serv-op">
+                      <button type="button" class="serv-op-btn approve" data-bs-toggle="modal" data-bs-target="#acceptServModal">الموافقة</button>
+                      <button type="button" class="serv-op-btn reject" data-bs-toggle="modal" data-bs-target="#rejectServModal">الرفض</button>
+                    </div>
+                  </div>
+                  <div class="serv-order">
+                    <div class="serv-data">
+                      <div class="serv-info">
+                        <div class="serv-img">
+                          <img src="../../images/alt-dark.svg" alt="">
+                        </div>
+                        <div class="serv-name">
+                          <h6>اسم العرض</h6>
+                          <div class="serv-date">
+                            <span>تاريخ الطلب</span><span>18/5/2023</span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6>اسم المستخدم</h6>
+                    </div>
+                    <div class="serv-op">
+                      <button type="button" class="serv-op-btn approve" data-bs-toggle="modal" data-bs-target="#acceptServModal">الموافقة</button>
+                      <button type="button" class="serv-op-btn reject" data-bs-toggle="modal" data-bs-target="#rejectServModal">الرفض</button>
+                    </div>
+                  </div>
+                  <div class="serv-order">
+                    <div class="serv-data">
+                      <div class="serv-info">
+                        <div class="serv-img">
+                          <img src="../../images/alt-dark.svg" alt="">
+                        </div>
+                        <div class="serv-name">
+                          <h6>اسم العرض</h6>
+                          <div class="serv-date">
+                            <span>تاريخ الطلب</span><span>18/5/2023</span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6>اسم المستخدم</h6>
+                    </div>
+                    <div class="serv-op">
+                      <button type="button" class="serv-op-btn approve" data-bs-toggle="modal" data-bs-target="#acceptServModal">الموافقة</button>
+                      <button type="button" class="serv-op-btn reject" data-bs-toggle="modal" data-bs-target="#rejectServModal">الرفض</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+
+    <div class="modal" id="rejectServModal" tabindex="-1" aria-labelledby="rejectServModalLabel" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">  
+          <div class="modal-body">
+            <label for="apologyReason" class="form-label">سبب الرفض</label>
+            <textarea class="form-control"></textarea>
+            <a href="rejected-offers.html" class="main-btn dark w-100 mt-4">ارسال</a>
+          </div> 
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Bootstrap script-->
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery script -->
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <!-- owl carousel script -->
+    <script src="../../js/owl.carousel.min.js"></script>
+    <!-- fancyBox script -->
+    <script src="../../js/jquery.fancybox.min.js"></script>
+    <!-- wow script -->
+    <script src="../../js/wow.min.js"></script>
+    <!-- nice_select script -->
+    <script src="../../js/jquery.nice-select.min.js"></script>
+    <!-- rateYo script -->
+    <script src="../../js/jquery.rateyo.min.js"></script>
+    <!-- custom script -->
+    <script src="../../js/script.js"></script>
+  </body>
+</html>

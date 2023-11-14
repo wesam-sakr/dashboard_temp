@@ -277,6 +277,9 @@ h1.logo {
   width: 220px;
   padding: .5rem;
 }
+.main-btn.bg-white{
+  background: #fff !important;
+}
 .circle-btn{
   font-size: 16px;
   background: var(--second-color) !important;
@@ -494,7 +497,7 @@ h1.logo {
 .navbar .container ,
 .navbar .container-fluid{
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 3fr 11fr;
 }
 
 .navbar .option {
@@ -547,7 +550,7 @@ h1.logo {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 3fr 11fr;
   height: calc(100vh - 74px);
 }
 
@@ -706,6 +709,7 @@ main .nav-dash li .nav-link.active {
   align-items: center;
   justify-content: center;
   gap: 60px;
+  gap: 35px;
 }
 .serv-op h6{
   width: max-content !important;
